@@ -10,3 +10,9 @@ FROM `students`
 INNER JOIN `degrees`
 ON `degrees`.`id` = `students`.`degree_id`
 WHERE `degrees`.`id` = 53;
+
+2)
+SELECT * 
+FROM `degrees` 
+WHERE `level` = "Magistrale"
+AND `department_id` = 7;
