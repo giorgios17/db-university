@@ -1,0 +1,12 @@
+1)
+SELECT `degrees`.`id`, `students`.`name`, `students`.`surname`, `students`.`fiscal_code`, `students`.`registration_number`, `students`.`enrolment_date` 
+FROM `students` 
+INNER JOIN `degrees`
+ON `degrees`.`id` = `students`.`degree_id`
+WHERE `degrees`.`id` = 53;
+or 
+SELECT *
+FROM `students` 
+INNER JOIN `degrees`
+ON `degrees`.`id` = `students`.`degree_id`
+WHERE `degrees`.`id` = 53;
