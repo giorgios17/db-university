@@ -12,3 +12,8 @@ GROUP BY `office_address`;
 SELECT COUNT(*), `exam_id`, ROUND(AVG(`vote`), 2) 
 FROM `exam_student` 
 GROUP BY `exam_id`;
+
+4)
+SELECT COUNT(*), `department_id` 
+FROM `degrees` 
+GROUP BY `department_id`;
